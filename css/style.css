@@ -126,6 +126,30 @@ ul, li{
     font-weight: bold;
 }
 
+#slide1 h4{
+	margin-bottom:.8em;
+}
+
+#slide1 footer{
+	margin-top: 30px;
+}
+
+#slide1 footer #skills{
+	margin: 0 20px;
+}
+
+#slide1 .skill-box{
+	display: inline-block;
+	font-size: small;
+	color: #fff;
+	background-color: #DB5432;
+	padding: 1px 15px 4px 15px;
+	margin:5px;
+	border-radius: 3px;
+	box-shadow:1px 1px 0px rgba(50, 50, 50, 0.35);
+	white-space:nowrap;
+}
+
 /* Slide 2 */
 #education .diploma{
 	/*border: 1px solid #4D4640;*/
