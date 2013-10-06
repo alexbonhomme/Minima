@@ -60,7 +60,7 @@ ul, li{
 	top:0px;
 	width:100%; 
 	height:auto; 
-	background-color:#ffffff;
+	background-color:#fff;
 	z-index:100;
 }
 #logo {
@@ -96,7 +96,6 @@ ul, li{
 
 
 /* General Slides */ 
-
 .slide {
 	background-attachment: fixed;
 	width:100%;
@@ -128,6 +127,38 @@ ul, li{
 }
 
 /* Slide 2 */
+#education .diploma{
+	/*border: 1px solid #4D4640;*/
+	-moz-box-shadow:-1px 2px 5px 1px rgba(0,0,0,.4);
+	-webkit-box-shadow:-1px 2px 5px 1px rgba(0,0,0,.4);
+	-o-box-shadow:-1px 2px 5px 1px rgba(0,0,0,.4);
+	box-shadow:-1px 2px 5px 1px rgba(0,0,0,.4);
+}
+
+#education header,
+#education footer{
+	text-align: center;
+	padding: 10px 5px ;
+}
+
+#education header{
+	font-size: 1.2em;
+	font-weight: bolder;
+	margin-bottom: 10px;
+}
+
+#education footer{
+	font-size: small;
+	margin-top: 10px;
+}
+
+#education p{
+	text-align: justify;
+	margin: auto;
+	padding: .5em 1em;
+}
+
+
 
 /* Slide 3 */
 #slide3 .content ul{
@@ -141,11 +172,11 @@ ul, li{
 #slide4{
 	background-image:url('../images/grey_wash_wall.png');
 	background-color:#8a8683;
-	color:#ffffff;
+	color:#fff;
 }
 #slide4 h1,
 #slide4 h2 {
-	color:#ffffff;
+	color:#fff;
 }
 #slide4 footer{
 	position: absolute;
@@ -232,7 +263,7 @@ ul, li{
 		text-align: center;
 	}
 
-	#nav {
+	.menu nav {
 		width:100%;
 		text-align:center;
 	}
@@ -258,6 +289,10 @@ ul, li{
 
 	.slide{
 		text-align: center;
+	}
+
+	#education .diploma{
+		margin-bottom: 15px;
 	}
 
 	#social-icons{
@@ -292,39 +327,6 @@ ul, li{
 
 /* Mobile */
 @media screen and (max-width: 480px) {
-
-	#logo {
-		width: 100%;
-		text-align: center;
-	}
-
-	#nav {
-		width:100%;
-		text-align:center;
-	}
-
-	.menu .container{
-		width: 100%;
-	}
-
-	.navigation{
-		width: 100%;
-		text-align: center;
-		list-style: none;
-		margin: 0;
-		padding:0;
-	}
-
-	.navigation li{
-		float: left;
-		width: 23%;
-		margin:0 1%;
-		padding:0 0 15px;
-	}
-
-	.slide{
-		text-align: center;
-	}
 
 	#social-icons{
 		width: 192px;
