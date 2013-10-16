@@ -1,3 +1,6 @@
+/*
+ * Source : http://codepen.io/P233/details/lGewF
+ */
 /* -------------------------------------
  * General Style
  * ------------------------------------- */
@@ -11,7 +14,6 @@
 /* -------------------------------------
  * timeline
  * ------------------------------------- */
-
 #timeline{
   list-style: none;
   margin: 50px 0 30px 120px;
@@ -22,11 +24,6 @@
   margin: 40px 0;
   position: relative;
 }
-
-#timeline p{
-  margin: 0 0 15px;
-}
-    
 
 #timeline .date{
   margin-top: -10px;
@@ -53,12 +50,11 @@
 #timeline .content{
   max-height: 20px;
   padding: 50px 20px 0;
-  border-color: transparent;
-  border-width: 2px;
-  border-style: solid;
-  border-radius: 0.3em;
+  border-left: 4px solid transparent;
   position: relative;
+  text-align: left;
 }
+/*
 #timeline .content:before, 
 #timeline .content:after{
   content: "";
@@ -81,16 +77,23 @@
   top: 50%;
   margin-top: -17px;
 }
-#timeline .content p{
+*/
+#timeline .content div{
+	padding: 0;
   max-height: 0;
   color: transparent;
   text-align: justify;
   word-break: break-word;
-  hyphens: auto;
   overflow: hidden;
 }
 
+#timeline .content div li{
+	margin: 5px 0;
+	list-style-type:square;
+}
+
 #timeline label{
+	text-align: left;
   font-size: 1.3em;
   position: absolute;
   z-index: 100;
@@ -109,15 +112,24 @@
 #timeline .radio:checked + .relative .circle{
   background: #DB5432;
 }
+#timeline .radio:checked + .relative .date{
+  font-size: large;
+}
 #timeline .radio:checked ~ .content{
-  max-height: 180px;
-  border-color: #4D4640;
+  max-height: 320px;
+  border-color: #DB5432;
   margin-right: 20px;
   -webkit-transform: translateX(20px);
   -webkit-transition: max-height 0.4s linear, border-color 0.5s linear, -webkit-transform 0.2s linear;
+  -moz-box-shadow:1px 3px 6px 0px rgba(0,0,0,.4);
+	-webkit-box-shadow:1px 3px 6px 0px rgba(0,0,0,.4);
+	-o-box-shadow:1px 3px 6px 0px rgba(0,0,0,.4);
+	box-shadow:1px 3px 6px 0px rgba(0,0,0,.4);
+
 }
-#timeline .radio:checked ~ .content p{
-  max-height: 200px;
+#timeline .radio:checked ~ .content div{
+	padding: 10px 15px 20px 15px;
+  max-height: 300px;
   color: #4D4640;
   -webkit-transition: color 0.3s linear 0.3s;
 }
@@ -126,52 +138,34 @@
 * mobile phones (vertical version only)
 * ------------------------------------- */
 @media screen and (max-width: 767px){
-  #timeline{
-    margin-left: 0;
-    padding-left: 0;
-    border-left: none;
-  }
-   #timeline li{
-      margin: 50px 0;
-    }
-  #timeline label{
-    width: 85%;
-    font-size: 1.1em;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    display: block;
-    -webkit-transform: translateX(18px);
-  }
-  #timeline .content{
-    padding-top: 45px;
-    border-color: #4D4640;
-  }
-  #timeline .content:before, 
-  #timeline .content:after{
-    border: solid transparent;
-    bottom: 100%;
-  }
-  #timeline .content:before{
-    border-bottom-color: inherit;
-    border-width: 17px;
-    top: -16px;
-    left: 50px;
-    margin-left: -17px;
-  }
-  #timeline .content:after{
-    border-bottom-color: #fff;
-    border-width: 20px;
-    top: -20px;
-    left: 50px;
-    margin-left: -20px;
-  }
-  #timeline .content p{
-    font-size: 0.9em;
-    line-height: 1.4;
-  }
-  #timeline .circle, 
-  #timeline .date{
-    display: none;
-  }
+	#timeline{
+		margin-left: 0;
+		padding-left: 0;
+		border-left: none;
+	}
+	#timeline li{
+		margin: 50px 0;
+	}
+	#timeline label{
+		width: 85%;
+		font-size: 1.1em;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		display: block;
+		-webkit-transform: translateX(18px);
+	}
+	#timeline .content{
+		padding-top: 45px;
+		border-color: #4D4640;
+	}
+
+	#timeline .content div{
+		font-size: 0.9em;
+		line-height: 1.4;
+	}
+	#timeline .circle, 
+	#timeline .date{
+		display: none;
+	}
 }

@@ -20,6 +20,12 @@ jQuery(document).ready(function ($) {
     function goToByScroll(dataSlide) {
     	var position = $('.slide[data-slide="' + dataSlide + '"]').offset().top;
         
+        // This is to compensate the padding
+        // No need on the first slide because of the main menu
+        if (position > 0) {
+            position += 80;
+        }
+
         htmlBody.animate({
             scrollTop: position
         }, 2000, 'easeInOutQuint');
