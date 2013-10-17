@@ -112,7 +112,7 @@
 
 }
 #timeline .radio:checked ~ .content div{
-	padding: 10px 15px 20px 15px;
+	padding: 25px 15px 20px 15px;
 	max-height: 300px;
 	color: #4D4640;
 	-webkit-transition: color 0.3s linear 0.3s;
