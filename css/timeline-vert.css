@@ -54,30 +54,6 @@
   position: relative;
   text-align: left;
 }
-/*
-#timeline .content:before, 
-#timeline .content:after{
-  content: "";
-  width: 0;
-  height: 0;
-  border: solid transparent;
-  position: absolute;
-  pointer-events: none;
-  right: 100%;
-}
-#timeline .content:before{
-  border-right-color: inherit;
-  border-width: 20px;
-  top: 50%;
-  margin-top: -20px;
-}
-#timeline .content:after{
-  border-right-color: #fff;
-  border-width: 17px;
-  top: 50%;
-  margin-top: -17px;
-}
-*/
 #timeline .content div{
 	padding: 0;
   max-height: 0;
