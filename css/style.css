@@ -150,37 +150,9 @@ ul, li{
 }
 
 /* Slide 2 */
-#education .diploma{
-	/*border: 1px solid #4D4640;*/
-	-moz-box-shadow:-1px 2px 5px 1px rgba(0,0,0,.4);
-	-webkit-box-shadow:-1px 2px 5px 1px rgba(0,0,0,.4);
-	-o-box-shadow:-1px 2px 5px 1px rgba(0,0,0,.4);
-	box-shadow:-1px 2px 5px 1px rgba(0,0,0,.4);
+#education #timeline{
+	text-align: left;
 }
-
-#education header,
-#education footer{
-	text-align: center;
-	padding: 10px 5px ;
-}
-
-#education header{
-	font-size: 1.2em;
-	font-weight: bolder;
-	margin-bottom: 10px;
-}
-
-#education footer{
-	font-size: small;
-	margin-top: 10px;
-}
-
-#education p{
-	text-align: justify;
-	margin: auto;
-	padding: .5em 1em;
-}
-
 
 
 /* Slide 3 */
@@ -190,6 +162,7 @@ ul, li{
 #slide3 .content li{
 	margin-bottom: 3px; 
 }
+
 
 /* Slide 4 */
 #slide4{

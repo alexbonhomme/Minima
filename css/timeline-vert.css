@@ -5,62 +5,63 @@
  * General Style
  * ------------------------------------- */
 #timeline h2{
-  margin: 3em 0 0 0;
-  font-size: 1.5em;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+	margin: 3em 0 0 0;
+	font-size: 1.5em;
+	letter-spacing: 2px;
+	text-transform: uppercase;
 }
 
 /* -------------------------------------
  * timeline
  * ------------------------------------- */
 #timeline{
-  list-style: none;
-  margin: 50px 0 30px 120px;
-  padding-left: 30px;
-  border-left: 8px solid #4D4640;
+	list-style: none;
+	margin: 50px 0 30px 120px;
+	padding-left: 30px;
+	border-left: 8px solid #4D4640;
 }
 #timeline li{
-  margin: 40px 0;
-  position: relative;
+	margin: 40px 0;
+	position: relative;
 }
 
 #timeline .date{
-  margin-top: -10px;
-  top: 50%;
-  left: -158px;
-  font-size: 0.95em;
-  line-height: 20px;
-  position: absolute;
+	margin-top: -10px;
+	top: 50%;
+	left: -158px;
+	font-size: 0.95em;
+	line-height: 20px;
+	position: absolute;
 }
   
 #timeline .circle{
-  margin-top: -10px;
-  top: 50%;
-  left: -44px;
-  width: 10px;
-  height: 10px;
-  background: #fff;
-  border: 5px solid #4D4640;
-  border-radius: 50%;
-  display: block;
-  position: absolute;
+	margin-top: -10px;
+	top: 50%;
+	left: -44px;
+	width: 10px;
+	height: 10px;
+	background: #fff;
+	border: 5px solid #4D4640;
+	border-radius: 50%;
+	display: block;
+	position: absolute;
 }
   
 #timeline .content{
-  max-height: 20px;
-  padding: 50px 20px 0;
-  border-left: 4px solid transparent;
-  position: relative;
-  text-align: left;
+	width: auto;
+	max-height: 20px;
+	padding: 50px 20px 0;
+	border-left: 4px solid transparent;
+	position: relative;
+	text-align: left;
 }
 #timeline .content div{
 	padding: 0;
-  max-height: 0;
-  color: transparent;
-  text-align: justify;
-  word-break: break-word;
-  overflow: hidden;
+	max-height: 0;
+	color: transparent;
+	text-align: justify;
+	word-break: break-word;
+	overflow: hidden;
 }
 
 #timeline .content div li{
@@ -70,43 +71,41 @@
 
 #timeline label{
 	text-align: left;
-  font-size: 1.3em;
-  position: absolute;
-  z-index: 100;
-  cursor: pointer;
-  top: 20px;
-  -moz-transition: -webkit-transform 0.2s linear;
-  -webkit-transition: -webkit-transform 0.2s linear;
-  transition: -webkit-transform 0.2s linear;
+	font-size: 1.3em;
+	position: absolute;
+	z-index: 100;
+	cursor: pointer;
+	top: 20px;
+	-moz-transition: -webkit-transform 0.2s linear;
+	-webkit-transition: -webkit-transform 0.2s linear;
+	transition: -webkit-transform 0.2s linear;
 }
     
 #timeline .radio{
-  display: none;
+	display: none;
 }
 #timeline .radio:checked + .relative label{
-  cursor: auto;
-  -moz-transform: translateX(42px);
-  -webkit-transform: translateX(42px);
-  transform: translateX(42px);
+	cursor: auto;
+	-moz-transform: translateX(42px);
+	-webkit-transform: translateX(42px);
+	transform: translateX(42px);
 }
 #timeline .radio:checked + .relative .circle{
-  background: #DB5432;
+	background: #DB5432;
 }
 #timeline .radio:checked + .relative .date{
-  font-size: large;
+	font-size: large;
 }
 #timeline .radio:checked ~ .content{
-  max-height: 320px;
-  border-color: #DB5432;
-  margin-right: 20px;
-  -moz-transform: translateX(20px);
-  -webkit-transform: translateX(20px);
-  transform: translateX(20px);
-  
-  -moz-transition: max-height 0.4s linear, border-color 0.5s linear, -webkit-transform 0.2s linear;
-  -webkit-transition: max-height 0.4s linear, border-color 0.5s linear, -webkit-transform 0.2s linear;
-  transition: max-height 0.4s linear, border-color 0.5s linear, -webkit-transform 0.2s linear;
-	
+	max-height: 320px;
+	border-color: #DB5432;
+	margin-right: 20px;
+	-moz-transform: translateX(20px);
+	-webkit-transform: translateX(20px);
+	transform: translateX(20px);
+	-moz-transition: max-height 0.4s linear, border-color 0.5s linear, -webkit-transform 0.2s linear;
+	-webkit-transition: max-height 0.4s linear, border-color 0.5s linear, -webkit-transform 0.2s linear;
+	transition: max-height 0.4s linear, border-color 0.5s linear, -webkit-transform 0.2s linear;
 	-moz-box-shadow:1px 3px 6px 0px rgba(0,0,0,.4);
 	-webkit-box-shadow:1px 3px 6px 0px rgba(0,0,0,.4);
 	box-shadow:1px 3px 6px 0px rgba(0,0,0,.4);
@@ -114,17 +113,17 @@
 }
 #timeline .radio:checked ~ .content div{
 	padding: 10px 15px 20px 15px;
-  max-height: 300px;
-  color: #4D4640;
-  -webkit-transition: color 0.3s linear 0.3s;
-  -moz-transition: color 0.3s linear 0.3s;
-  transition: color 0.3s linear 0.3s;
+	max-height: 300px;
+	color: #4D4640;
+	-webkit-transition: color 0.3s linear 0.3s;
+	-moz-transition: color 0.3s linear 0.3s;
+	transition: color 0.3s linear 0.3s;
 }
 
 /* -------------------------------------
 * mobile phones (vertical version only)
 * ------------------------------------- */
-@media screen and (max-width: 767px){
+@media screen and (max-width: 768px){
 	#timeline{
 		margin-left: 0;
 		padding-left: 0;
@@ -144,9 +143,18 @@
 		-webkit-transform: translateX(18px);
 		transform: translateX(18px);
 	}
+	#timeline .radio:checked + .relative label{
+		padding-right: 30px;
+		width: auto;
+		white-space: normal;
+	}
 	#timeline .content{
-		padding-top: 45px;
+		width: auto;
+		padding-top: 60px;
 		border-color: #4D4640;
+		-moz-box-shadow:1px 3px 6px 0px rgba(0,0,0,.4);
+		-webkit-box-shadow:1px 3px 6px 0px rgba(0,0,0,.4);
+		box-shadow:1px 3px 6px 0px rgba(0,0,0,.4);
 	}
 
 	#timeline .content div{
