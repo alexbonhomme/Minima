@@ -60,7 +60,7 @@
 	max-height: 0;
 	color: transparent;
 	text-align: justify;
-	word-break: break-word;
+	word-break: normal;
 	overflow: hidden;
 }
 
@@ -76,6 +76,7 @@
 	z-index: 100;
 	cursor: pointer;
 	top: 20px;
+	word-break: break-all;
 	-moz-transition: -webkit-transform 0.2s linear;
 	-webkit-transition: -webkit-transform 0.2s linear;
 	transition: -webkit-transform 0.2s linear;
