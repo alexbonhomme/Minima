@@ -122,13 +122,15 @@ ul, li{
     font-variant:small-caps;
     font-weight: bold;
 }
-
+#slide1 h2{
+	margin-bottom: .4em;
+}
 #slide1 h4{
 	margin-bottom:.8em;
 }
 
 #slide1 footer{
-	margin-top: 5em;
+	margin-top: 3em;
 }
 
 #slide1 footer #skills{
