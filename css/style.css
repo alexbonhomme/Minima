@@ -23,16 +23,17 @@ a:visited:hover {
 	text-decoration: none;
 }
 a.code-link,
-a.paper-link{
+a.paper-link,
+a.image-link{
 	display: inline-block;
 	margin-right: 5px;
 	vertical-align: middle;
 }
 a.code-link span,
-a.paper-link span{
+a.paper-link span,
+a.image-link span{
 	display: none;
 	vertical-align: middle;
-	
 }
 a.code-link{
 	width: 24px;
@@ -45,6 +46,12 @@ a.paper-link{
 	height: 16px;
 	background-size: 16px 16px;
 	background: #fff url('../images/clip-16.png') no-repeat center center;
+}
+a.image-link{
+	width: 16px;
+	height: 16px;
+	background-size: 16px 16px;
+	background: #fff url('../images/image-16.png') no-repeat center center;
 }
 
 ul, li{
