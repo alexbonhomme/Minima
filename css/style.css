@@ -128,6 +128,7 @@ ul, li{
 	text-transform:capitalize;
     font-variant:small-caps;
     font-weight: bold;
+    margin-top: .6em;
 }
 #slide1 h2{
 	margin-bottom: .4em;
