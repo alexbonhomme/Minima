@@ -8,6 +8,7 @@ body {
 }
 img {
 	max-width: 100%;
+	box-shadow: 0 0 20px;
 }
 a img{
 	vertical-align: middle;
@@ -63,8 +64,8 @@ ul, li{
 .menu {
 	position:fixed;
 	top:0px;
-	width:100%; 
-	height:auto; 
+	width:100%;
+	height:auto;
 	background-color:#fff;
 	z-index:1000;
 }
@@ -98,7 +99,7 @@ ul, li{
 }
 
 
-/* General Slides */ 
+/* General Slides */
 .slide {
 	background-attachment: fixed;
 	width:100%;
@@ -174,7 +175,7 @@ ul, li{
 	text-align: left;
 }
 #slide3 .content li{
-	margin-bottom: 3px; 
+	margin-bottom: 3px;
 }
 
 
